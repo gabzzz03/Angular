@@ -15,7 +15,7 @@ export class HeaderComponent {
   user: User | null = null;
   logo = "Logo.svg";
 
-  constructor(private userAuthService: UserAuthService) {}
+  constructor(public userAuthService: UserAuthService) {}
 
   get imagePath() {
     return 'assets/' + this.logo;
