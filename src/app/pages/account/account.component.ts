@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { User } from '../../models/user.model';
+import { UserAuthService } from '../../services/user-auth.service';
 
 @Component({
   selector: 'app-account',
@@ -9,5 +10,7 @@ import { User } from '../../models/user.model';
   styleUrl: './account.component.scss'
 })
 export class AccountComponent {
-  @Input({required : true}) user!: User
+  constructor(public UserAuthService : UserAuthService){
+
+  }
 }

@@ -1,5 +1,13 @@
 export const DUMMY_USER = {
-  id: number,
+  avatar: {
+    gravatar: {
+      hash: '96c1c5dfd656cb32f6b436fa9cabe352',
+    },
+    tmdb: {
+      avatar_path: null,
+    },
+  },
+  id: 22046382,
   iso_639_1: 'it',
   iso_3166_1: 'IT',
   name: '',

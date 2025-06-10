@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output} from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -8,15 +8,15 @@ import { Component, EventEmitter, Input, Output} from '@angular/core';
   styleUrl: './button.component.scss'
 })
 export class ButtonComponent {
-  @Input({required:true}) title!: string;
+  @Input({required: true}) title!: string;
   @Input() isSecondary: boolean = false;
   @Output() buttonClicked = new EventEmitter<void>();
 
   get btnStyle() {
-    return this.isSecondary ? 'btn-secondary' : 'btn-primary'
+    return this.isSecondary ? 'btn-secondary' : 'btn-primary';
   }
 
   onButtonClicked() {
-    this.buttonClicked.emit;
+    this.buttonClicked.emit();
   }
 }

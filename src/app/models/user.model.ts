@@ -1,8 +1,17 @@
+
 export interface User {
-  id: number,
-  iso_639_1: 'it',
-  iso_3166_1: 'IT',
-  name?: string,
-  include_adult: boolean,
-  username: 'ITS-Web' | string;
+  avatar: {
+    gravatar: {
+      hash: string;
+    };
+    tmdb: {
+      avatar_path: string | null;
+    };
+  };
+  id: number;
+  iso_639_1: string;  
+  iso_3166_1: string;
+  name: string;
+  include_adult: boolean;
+  username: string;
 }
